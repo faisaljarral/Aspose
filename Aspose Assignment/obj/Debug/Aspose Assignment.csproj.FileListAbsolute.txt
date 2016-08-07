@@ -1,0 +1,37 @@
+F:\Aspose Assignment\Aspose Assignment\bin\Aspose Assignment.dll
+F:\Aspose Assignment\Aspose Assignment\bin\Aspose Assignment.pdb
+F:\Aspose Assignment\Aspose Assignment\bin\Antlr3.Runtime.dll
+F:\Aspose Assignment\Aspose Assignment\bin\Aspose.Words.dll
+F:\Aspose Assignment\Aspose Assignment\bin\EntityFramework.dll
+F:\Aspose Assignment\Aspose Assignment\bin\Microsoft.Web.Infrastructure.dll
+F:\Aspose Assignment\Aspose Assignment\bin\Newtonsoft.Json.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Net.Http.Formatting.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Helpers.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Http.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Http.WebHost.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Mvc.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Optimization.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Providers.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Razor.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.WebPages.Deployment.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.WebPages.dll
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.WebPages.Razor.dll
+F:\Aspose Assignment\Aspose Assignment\bin\WebGrease.dll
+F:\Aspose Assignment\Aspose Assignment\bin\Aspose.Words.xml
+F:\Aspose Assignment\Aspose Assignment\bin\EntityFramework.xml
+F:\Aspose Assignment\Aspose Assignment\bin\Newtonsoft.Json.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Net.Http.Formatting.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Helpers.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Http.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Http.WebHost.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Mvc.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.Razor.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.WebPages.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.WebPages.Deployment.xml
+F:\Aspose Assignment\Aspose Assignment\bin\System.Web.WebPages.Razor.xml
+F:\Aspose Assignment\Aspose Assignment\obj\Debug\Aspose Assignment.dll
+F:\Aspose Assignment\Aspose Assignment\obj\Debug\Aspose Assignment.pdb
+F:\Aspose Assignment\Aspose Assignment\bin\LinqBridge.dll
+F:\Aspose Assignment\Aspose Assignment\obj\Debug\Aspose Assignment.csprojResolveAssemblyReference.cache
+F:\Aspose Assignment\Aspose Assignment\bin\Common.dll
+F:\Aspose Assignment\Aspose Assignment\bin\Common.pdb

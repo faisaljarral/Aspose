@@ -1,0 +1,120 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnConvert").click(function () {
+
+              $.ajax({
+                    url: "Word/Convert/?inputfile=" + $('#FileName').val() + "&format=" + $('#Format').val(),
+                    headers: {'API_KEY': '1744faaa-e5bf-47f4-a955-dc164b1ad5d1',
+                    'APP_SID': '0a4252a0-7e70-11d0-a5d6-28db04c10000' },
+                    type: "PUT",
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#ConvertMessage').html('Document processed successfully. Click following link to download it.<br/ ><a href="' + data.DocumentLink + '" target="_blank">' + data.DocumentLink + '<a/>');
+                    },
+                    error: function (er) { alert('Error....' + er.Message); }
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btnCheckProtection").click(function () {
+
+                $.ajax({
+                    url: "Word/" + $('#FileName').val() + "/Protection",
+                    headers: {
+                        'API_KEY': '1744faaa-e5bf-47f4-a955-dc164b1ad5d1',
+                        'APP_SID': '0a4252a0-7e70-11d0-a5d6-28db04c10000'
+                    },
+                    type: "GET",
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#CheckProtectionMessage').html('Protection mode is : ' + data.ProtectionType);
+                    },
+                    error: function (er) { alert('Error....'); }
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btnProtect").click(function () {
+                var ProtectionInfo =
+                    {
+                    ProtectionType : $('#ProtectionType').val(),
+                    Password : $('#Password').val(),
+                    NewPassword : $('#NewPassword').val()
+                    }
+
+                $.ajax({
+                    url: "Word/" + $('#FileName').val() + "/Protection",
+                    headers: {
+                        'API_KEY': '1744faaa-e5bf-47f4-a955-dc164b1ad5d1',
+                        'APP_SID': '0a4252a0-7e70-11d0-a5d6-28db04c10000'
+                    },
+                    type: "POST",
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    data : JSON.stringify(ProtectionInfo),
+                    success: function (data) {
+                        $('#ProtectMessage').html('Protection mode of document is set. Click following link to download it.<br/ ><a href="' + data.DocumentLink + '" target="_blank">' + data.DocumentLink + '<a/>');
+                    },
+                    error: function (er) { alert('Error....' + er.Message); }
+                });
+            });
+        });
+       </script>
+    <style type="text/css">
+        #FileName {
+            width: 264px;
+        }
+    </style>
+</head>
+<body>  
+    <h1>RESTfull API Test to Convert & Protect a Document</h1>
+<div id="body">
+
+    <form id="form1" method="post" action="Word/Storage" enctype="multipart/form-data">
+     
+     <div>
+         <label>File Name</label>
+         <input id="FileName" type="text" /><br />
+         <h2>Convert Document</h2>
+         <label>Choose Format</label>
+        <select id="Format" name="D1">
+            <option value="bmp">Bitmap image file</option>
+            <option value="docx">Microsoft Word Open XML Document</option>
+            <option value="emf">Enhanced Windows Metafile</option>
+            <option value="jpeg">JPEG Image</option>
+            <option value="pdf">Portable Document Format File</option>
+            <option value="png">Portable Network Graphic</option>
+            <option value="rtf">Rich Text Format File</option>
+            <option value="swf">Shockwave Flash Movie</option>
+            <option value="txt">Plain Text File</option>
+            <option value="tiff">Tagged Image File Format</option>
+        </select><input id="btnConvert" type="button" value="Convert" /><br />
+         <div id="ConvertMessage"></div><br />
+         <h2>Check Protection of Document</h2>
+        <input id="btnCheckProtection" type="button" value="Check Protection"/>
+         <div id="CheckProtectionMessage"></div><br />
+         <h2>Set Protection of Document</h2>
+        <label>Choose Protection Type</label>
+        <select id="ProtectionType" name="D2">
+            <option value="AllowOnlyComments">Allow only comments</option>
+            <option value="AllowOnlyFormFields">Allow only form fields</option>
+            <option value="AllowOnlyRevisions">Allow only Revisions</option>
+            <option value="ReadOnly">Read only</option>
+            <option value="NoProtection">No protection</option>
+        </select><br />
+        <label>Password: </label><input id="Password" type="Password" /><br />
+        <br />
+        <label>New Password: </label><input id="NewPassword" type="Password" /><br />
+        <br />
+        <input id="btnProtect" type="button" value="Protect" /><br />
+         <div id="ProtectMessage"></div>
+    </div>
+    </form>
+</div>
+</body>

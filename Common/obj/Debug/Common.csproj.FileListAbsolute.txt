@@ -1,0 +1,9 @@
+F:\Aspose Assignment\Common\bin\Debug\Common.dll
+F:\Aspose Assignment\Common\bin\Debug\Common.pdb
+F:\Aspose Assignment\Common\bin\Debug\System.Web.Http.dll
+F:\Aspose Assignment\Common\bin\Debug\System.Net.Http.Formatting.dll
+F:\Aspose Assignment\Common\bin\Debug\System.Web.Http.xml
+F:\Aspose Assignment\Common\bin\Debug\System.Net.Http.Formatting.xml
+F:\Aspose Assignment\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+F:\Aspose Assignment\Common\obj\Debug\Common.dll
+F:\Aspose Assignment\Common\obj\Debug\Common.pdb
